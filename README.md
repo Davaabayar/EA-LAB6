@@ -1,6 +1,5 @@
 #Lab 6 - Java Persistence Query Language (JPQL) Exercise JPQL.1</br>
 *The Exercise*
-Look through the application code, and once you feel comfortable with what it does update the JPQL queries in Application.java to retrieve the following data:</br></br>
 a)	All flights leaving the USA with a capacity > 500
 ```java
 List<Flight> flights = em.createQuery("from Flight f where f.origin.country='USA' and f.airplane.capacity>500", Flight.class).getResultList();
